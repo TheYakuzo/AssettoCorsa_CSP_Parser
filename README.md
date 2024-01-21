@@ -40,7 +40,7 @@ cd AssettoCorsa_CSP_Parser
 2. Run the script with Python:
 
    ```bash
-   python process_ini.py
+   python3 csp_parser.py
    ```
 
 Check the output, which will be printed in the console and can be redirected to a file if needed.
