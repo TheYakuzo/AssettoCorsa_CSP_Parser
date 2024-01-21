@@ -1,0 +1,1547 @@
+{
+    "fuel": {
+        "name": "Fuel",
+        "childs": {
+            "diesel_engine": {
+                "name": "Diesel Engine",
+                "tag": "[BASIC]",
+                "entries": {
+                    "DIESEL_ENGINE": "1"
+                }
+            },
+            "gasoline_engine": {
+                "name": "Gasoline Engine",
+                "tag": "[BASIC]",
+                "entries": {
+                    "DIESEL_ENGINE": "0"
+                }
+            }
+        }
+    },
+    "car_type": {
+        "name": "Car Type",
+        "childs": {
+            "racing_car": {
+                "name": "Racing Car",
+                "tag": "[BASIC]",
+                "entries": {
+                    "RACING_CAR": "1"
+                }
+            },
+            "open_wheeler": {
+                "name": "Open Wheeler",
+                "tag": "[BASIC]",
+                "entries": {
+                    "OPEN_WHEELER": "1"
+                }
+            },
+            "rally_car": {
+                "name": "Rally Car",
+                "tag": "[BASIC]",
+                "entries": {
+                    "RALLY_CAR": "1"
+                }
+            }
+        }
+    },
+    "instruments": {
+        "name": "Instruments",
+        "childs": {
+            "analog_instruments": {
+                "name": "Analog Instruments",
+                "childs": {
+                    "speed": {
+                        "name": "Speed",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "SPEED"
+                        }
+                    },
+                    "speed_wheels": {
+                        "name": "Speed Wheels",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "SPEED_WHEELS"
+                        }
+                    },
+                    "velocity": {
+                        "name": "Velocity",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "VELOCITY"
+                        }
+                    },
+                    "velocity_local": {
+                        "name": "Velocity Local",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "VELOCITY_LOCAL"
+                        }
+                    },
+                    "rpm": {
+                        "name": "RPM",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "RPM"
+                        }
+                    },
+                    "steer": {
+                        "name": "Steer",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "STEER"
+                        }
+                    },
+                    "handbrake": {
+                        "name": "Handbrake",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "HANDBRAKE"
+                        }
+                    },
+                    "gas": {
+                        "name": "Gas",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "GAS"
+                        }
+                    },
+                    "brake": {
+                        "name": "Brake",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "BRAKE"
+                        }
+                    },
+                    "clutch": {
+                        "name": "Clutch",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "CLUTCH"
+                        }
+                    },
+                    "fuel": {
+                        "name": "Fuel",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "FUEL"
+                        }
+                    },
+                    "water_temperature": {
+                        "name": "Water Temperature",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "WATER_TEMPERATURE"
+                        }
+                    },
+                    "turbo": {
+                        "name": "Turbo",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "TURBO"
+                        }
+                    },
+                    "gear": {
+                        "name": "Gear",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "GEAR"
+                        }
+                    },
+                    "perf_meter": {
+                        "name": "Performance Meter",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "PERF_METER"
+                        }
+                    },
+                    "perf_meter_diff": {
+                        "name": "Performance Meter Difference",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "PERF_METER_DIFF"
+                        }
+                    },
+                    "tyre_wear": {
+                        "name": "Tyre Wear",
+                        "childs": {
+                            "front_left": {
+                                "name": "Front Left",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_WEAR",
+                                    "INPUT_SELECTOR": "0 | X | FIRST"
+                                }
+                            },
+                            "front_right": {
+                                "name": "Front Right",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_WEAR",
+                                    "INPUT_SELECTOR": "1 | Y | SECOND"
+                                }
+                            },
+                            "rear_left": {
+                                "name": "Rear Left",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_WEAR",
+                                    "INPUT_SELECTOR": "2 | Z | THIRD"
+                                }
+                            },
+                            "rear_right": {
+                                "name": "Rear Right",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_WEAR",
+                                    "INPUT_SELECTOR": "3 | W | FOURTH"
+                                }
+                            }
+                        }
+                    },
+                    "tyre_virtual_km": {
+                        "name": "Tyre Driven Distance",
+                        "childs": {
+                            "front_left": {
+                                "name": "Front Left",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_VIRTUAL_KM",
+                                    "INPUT_SELECTOR": "0 | X | FIRST"
+                                }
+                            },
+                            "front_right": {
+                                "name": "Front Right",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_VIRTUAL_KM",
+                                    "INPUT_SELECTOR": "1 | Y | SECOND"
+                                }
+                            },
+                            "rear_left": {
+                                "name": "Rear Left",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_VIRTUAL_KM",
+                                    "INPUT_SELECTOR": "2 | Z | THIRD"
+                                }
+                            },
+                            "rear_right": {
+                                "name": "Rear Right",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "TYRE_VIRTUAL_KM",
+                                    "INPUT_SELECTOR": "3 | W | FOURTH"
+                                }
+                            }
+                        }
+                    },
+                    "tyre_dirt": {
+                        "name": "Tyre Dirt",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "TYRE_DIRT"
+                        }
+                    },
+                    "tyre_slip": {
+                        "name": "Tyre Slip",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "TYRE_SLIP"
+                        }
+                    },
+                    "tyre_slip_angle": {
+                        "name": "Tyre Slip Angle",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "TYRE_SLIP_ANGLE"
+                        }
+                    },
+                    "engine_damage": {
+                        "name": "Engine Damage",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "ENGINE_DAMAGE | ENGINE_LIFE"
+                        }
+                    },
+                    "suspension_damage": {
+                        "name": "Suspension Damage",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "SUSP_DAMAGE"
+                        }
+                    },
+                    "gearbox_damage": {
+                        "name": "Gearbox Damage",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "GEARBOX_DAMAGE"
+                        }
+                    },
+                    "body_damage": {
+                        "name": "Body Damage",
+                        "front": {
+                            "name": "Front",
+                            "tag": "[ANALOG_INDICATOR_...]",
+                            "entries": {
+                                "INPUT": "BODY_DAMAGE",
+                                "INPUT_SELECTOR": "0 | X | FIRST"
+                            }
+                        },
+                        "rear": {
+                            "name": "Rear",
+                            "tag": "[ANALOG_INDICATOR_...]",
+                            "entries": {
+                                "INPUT": "BODY_DAMAGE",
+                                "INPUT_SELECTOR": "1 | Y | SECOND"
+                            }
+                        },
+                        "left": {
+                            "name": "Left",
+                            "tag": "[ANALOG_INDICATOR_...]",
+                            "entries": {
+                                "INPUT": "BODY_DAMAGE",
+                                "INPUT_SELECTOR": "2 | Z | THIRD"
+                            }
+                        },
+                        "right": {
+                            "name": "Right",
+                            "tag": "[ANALOG_INDICATOR_...]",
+                            "entries": {
+                                "INPUT": "BODY_DAMAGE",
+                                "INPUT_SELECTOR": "3 | W | FOURTH"
+                            }
+                        }
+                    },
+                    "suspension_travel": {
+                        "name": "Suspension Travel",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "SUSP_TRAVEL"
+                        }
+                    },
+                    "ride_height": {
+                        "name": "Ride Height",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "RIDE_HEIGHT"
+                        }
+                    },
+                    "slip_ratio": {
+                        "name": "Slip Ratio for Wheels",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "SLIP_RATIO"
+                        }
+                    },
+                    "g_force": {
+                        "name": "G-Force",
+                        "childs": {
+                            "lateral": {
+                                "name": "Lateral",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "G_FORCE",
+                                    "INPUT_SELECTOR": "0 | X | FIRST"
+                                }
+                            },
+                            "vertical": {
+                                "name": "Vertical",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "G_FORCE",
+                                    "INPUT_SELECTOR": "1 | Y | SECOND"
+                                }
+                            },
+                            "longitudal": {
+                                "name": "Longitudal",
+                                "tag": "[ANALOG_INDICATOR_...]",
+                                "entries": {
+                                    "INPUT": "G_FORCE",
+                                    "INPUT_SELECTOR": "2 | Z | THIRD"
+                                }
+                            }
+                        }
+                    },
+                    "gear_grinding": {
+                        "name": "Gear Grinding",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "GEAR_GRINDING"
+                        }
+                    },
+                    "time": {
+                        "name": "Time ( seconds )",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "TIME_SECONDS"
+                        }
+                    },
+                    "lap_time": {
+                        "name": "Lap Time ( seconds )",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "LAP_TIME"
+                        }
+                    },
+                    "best_lap_time": {
+                        "name": "Best Lap Time ( seconds )",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "BEST_LAP_TIME"
+                        }
+                    },
+                    "last_lap_time": {
+                        "name": "Last Lap Time ( seconds )",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "LAST_LAP_TIME"
+                        }
+                    },
+                    "lap_count": {
+                        "name": "Lap Count",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "LAP_COUNT"
+                        }
+                    },
+                    "horn": {
+                        "name": "Horn",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "HORN"
+                        }
+                    },
+                    "position": {
+                        "name": "Car Leaderboard Position",
+                        "tag": "[ANALOG_INDICATOR_...]",
+                        "entries": {
+                            "INPUT": "POSITION"
+                        }
+                    }
+                }
+            },
+            "vintage_tachometers": {
+                "name": "Vintage Tachometers",
+                "tag": "[INSTRUMENTS]",
+                "entries": {
+                    "RPM_VINTAGE": "1"
+                }
+            }
+        }
+    },
+    "audio": {
+        "name": "Audio",
+        "childs": {
+            "audio_volume": {
+                "name": "Audio Volume",
+                "childs": {
+                    "engine_exterior": {
+                        "name": "Engine Exterior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "ENGINE_EXT"
+                    },
+                    "engine_interior": {
+                        "name": "Engine Interior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "ENGINE_INT"
+                    },
+                    "gear_exterior": {
+                        "name": "Gear Exterior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "GEAR_EXT"
+                    },
+                    "gear_interior": {
+                        "name": "Gear Interior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "GEAR_INT"
+                    },
+                    "body_work": {
+                        "name": "Body Work",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "BODYWORK"
+                    },
+                    "wind": {
+                        "name": "Wind",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "WIND"
+                    },
+                    "dirt": {
+                        "name": "Dirt",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "DIRT"
+                    },
+                    "down_shift": {
+                        "name": "Down Shift",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "DOWN_SHIFT"
+                    },
+                    "horn": {
+                        "name": "Horn",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "HORN"
+                    },
+                    "gear_grind": {
+                        "name": "Gear Grind",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "GEAR_GRIND"
+                    },
+                    "backfire_ext": {
+                        "name": "Backfire Exterior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "BACKFIRE_EXT"
+                    },
+                    "backfire_int": {
+                        "name": "Backfire Interior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "BACKFIRE_INT"
+                    },
+                    "tc_ext": {
+                        "name": "Traction Control Exterior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "TC_EXT"
+                    },
+                    "tc_int": {
+                        "name": "Traction Control Interior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "TC_INT"
+                    },
+                    "transmission": {
+                        "name": "Transmission",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "TRANSMISSION"
+                    },
+                    "limiter": {
+                        "name": "Limiter",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "LIMITER"
+                    },
+                    "turbo": {
+                        "name": "Turbo",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "TURBO"
+                    },
+                    "hit": {
+                        "name": "Hit",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "HIT"
+                    },
+                    "scrape": {
+                        "name": "Scrape",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "SCRAPE"
+                    },
+                    "wheel": {
+                        "name": "Wheel",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "WHEEL"
+                    },
+                    "skid_ext": {
+                        "name": "Skid Exterior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "SKID_EXT"
+                    },
+                    "skid_int": {
+                        "name": "Skid Interior",
+                        "tag": "[AUDIO_VOLUME]",
+                        "return_value": true,
+                        "entry": "SKID_INT"
+                    }
+                }
+            },
+            "audio_pitch": {
+                "name": "Audio Pitch",
+                "childs": {
+                    "engine_exterior": {
+                        "name": "Engine Exterior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "ENGINE_EXT"
+                    },
+                    "engine_interior": {
+                        "name": "Engine Interior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "ENGINE_INT"
+                    },
+                    "gear_exterior": {
+                        "name": "Gear Exterior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "GEAR_EXT"
+                    },
+                    "gear_interior": {
+                        "name": "Gear Interior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "GEAR_INT"
+                    },
+                    "body_work": {
+                        "name": "Body Work",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "BODYWORK"
+                    },
+                    "wind": {
+                        "name": "Wind",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "WIND"
+                    },
+                    "dirt": {
+                        "name": "Dirt",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "DIRT"
+                    },
+                    "down_shift": {
+                        "name": "Down Shift",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "DOWN_SHIFT"
+                    },
+                    "horn": {
+                        "name": "Horn",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "HORN"
+                    },
+                    "gear_grind": {
+                        "name": "Gear Grind",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "GEAR_GRIND"
+                    },
+                    "backfire_ext": {
+                        "name": "Backfire Exterior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "BACKFIRE_EXT"
+                    },
+                    "backfire_int": {
+                        "name": "Backfire Interior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "BACKFIRE_INT"
+                    },
+                    "tc_ext": {
+                        "name": "Traction Control Exterior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "TC_EXT"
+                    },
+                    "tc_int": {
+                        "name": "Traction Control Interior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "TC_INT"
+                    },
+                    "transmission": {
+                        "name": "Transmission",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "TRANSMISSION"
+                    },
+                    "limiter": {
+                        "name": "Limiter",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "LIMITER"
+                    },
+                    "turbo": {
+                        "name": "Turbo",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "TURBO"
+                    },
+                    "hit": {
+                        "name": "Hit",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "HIT"
+                    },
+                    "scrape": {
+                        "name": "Scrape",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "SCRAPE"
+                    },
+                    "wheel": {
+                        "name": "Wheel",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "WHEEL"
+                    },
+                    "skid_ext": {
+                        "name": "Skid Exterior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "SKID_EXT"
+                    },
+                    "skid_int": {
+                        "name": "Skid Interior",
+                        "tag": "[AUDIO_PITCH]",
+                        "return_value": true,
+                        "entry": "SKID_INT"
+                    }
+                }
+            }
+        }
+    },
+    "brake_disc_fx": {
+        "name": "Brake Disc FX",
+        "childs": {
+            "ceramic": {
+                "name": "Ceramic Disc",
+                "tag": "[BRAKEDISC_FX]",
+                "entries": {
+                    "CERAMIC": "1",
+                    "ACTIVE": "1"
+                }
+            },
+            "carved": {
+                "name": "Carved Disc",
+                "tag": "[BRAKEDISC_FX]",
+                "entries": {
+                    "CARVED": "1",
+                    "ACTIVE": "1"
+                }
+            }
+        }
+    },
+    "deforming": {
+        "name": "Deforming",
+        "childs": {
+            "hood": {
+                "name": "Hood",
+                "tag": "[DEFORMING_HOOD]"
+            },
+            "rear": {
+                "name": "Rear",
+                "tag": "[DEFORMING_REAR]"
+            }
+        }
+    },
+    "driver_model": {
+        "name": "Driver Model",
+        "childs": {
+            "shadowed_driver": {
+                "name": "Shadowed Driver",
+                "tag": "[SHADOWED_DRIVER]"
+            },
+            "driver3d_model": {
+                "name": "3D Driver Model",
+                "tag": "[DRIVER3D_MODEL]"
+            }
+        }
+    },
+    "exhaust_smoke": {
+        "name": "Exhaust Smoke",
+        "tags": [
+            "[PARTICLES_FX_EXHAUST_...]",
+            "[PARTICLES_FX_EXHAUST_0]",
+            "[PARTICLES_FX_EXHAUST_1]",
+            "[PARTICLES_FX_EXHAUST_2]",
+            "[PARTICLES_FX_EXHAUST_3]"
+        ]
+    },
+    "exhaust_flames": {
+        "name": "Exhaust Flames",
+        "tag": "[EXHAUST_FLAMES]"
+    },
+    "lightning": {
+        "name": "Lighting",
+        "childs": {
+            "self_lightning": {
+                "name": "Self Lightning",
+                "childs": {
+                    "headlights": {
+                        "name": "Headlights",
+                        "tag": "[SelfLight_Headlights]"
+                    }
+                }
+            },
+            "lights": {
+                "name": "Lights",
+                "childs": {
+                    "exterior": {
+                        "name": "Exterior",
+                        "childs": {
+                            "headlights": {
+                                "name": "Headlights",
+                                "tags": [
+                                    "[EMISSIVE_LIGHT_...",
+                                    "[EMISSIVE_LIGHT_0]",
+                                    "[EMISSIVE_LIGHT_1]",
+                                    "[EMISSIVE_LIGHT_2]",
+                                    "[EMISSIVE_LIGHT_3]",
+                                    "[REFRACTING_HEADLIGHT_0]",
+                                    "[REFRACTING_HEADLIGHT_1]",
+                                    "[REFRACTING_HEADLIGHT_2]",
+                                    "[REFRACTING_HEADLIGHT_3]"
+                                ]
+                            },
+                            "beam": {
+                                "name": "Beam",
+                                "childs": {
+                                    "high": {
+                                        "name": "Highbeam",
+                                        "tags": [
+                                            "[EMISSIVE_HIGHBEAM_...]",
+                                            "[EMISSIVE_HIGHBEAM_0]",
+                                            "[EMISSIVE_HIGHBEAM_1]",
+                                            "[EMISSIVE_HIGHBEAM_2]",
+                                            "[EMISSIVE_HIGHBEAM_3]"
+                                        ]
+                                    },
+                                    "low": {
+                                        "name": "Lowbeam",
+                                        "tags": [
+                                            "[EMISSIVE_LOWBEAM_...]",
+                                            "[EMISSIVE_LOWBEAM_0]",
+                                            "[EMISSIVE_LOWBEAM_1]",
+                                            "[EMISSIVE_LOWBEAM_2]",
+                                            "[EMISSIVE_LOWBEAM_3]"
+                                        ]
+                                    }
+                                }
+                            },
+                            "cornering_lamp": {
+                                "name": "Cornering Lamp",
+                                "childs": {
+                                    "left": {
+                                        "name": "Left",
+                                        "tags": [
+                                            "[EMISSIVE_CORNERINGLAMP_LEFT_...]",
+                                            "[EMISSIVE_CORNERINGLAMP_LEFT_0]",
+                                            "[EMISSIVE_CORNERINGLAMP_LEFT_1]",
+                                            "[EMISSIVE_CORNERINGLAMP_LEFT_2]",
+                                            "[EMISSIVE_CORNERINGLAMP_LEFT_3]"
+                                        ]
+                                    },
+                                    "right": {
+                                        "name": "Right",
+                                        "tags": [
+                                            "[EMISSIVE_CORNERINGLAMP_RIGHT_...]",
+                                            "[EMISSIVE_CORNERINGLAMP_RIGHT_0]",
+                                            "[EMISSIVE_CORNERINGLAMP_RIGHT_1]",
+                                            "[EMISSIVE_CORNERINGLAMP_RIGHT_2]",
+                                            "[EMISSIVE_CORNERINGLAMP_RIGHT_3]"
+                                        ]
+                                    }
+                                }
+                            },
+                            "brakes": {
+                                "name": "Brakes",
+                                "childs": {
+                                    "front": {
+                                        "name": "Front",
+                                        "tags": [
+                                            "[EMISSIVE_BRAKE_...]",
+                                            "[EMISSIVE_BRAKE_0]",
+                                            "[EMISSIVE_BRAKE_1]",
+                                            "[EMISSIVE_BRAKE_2]",
+                                            "[EMISSIVE_BRAKE_3]"
+                                        ],
+                                        "entries": {
+                                            "LOCATION": "FRONT"
+                                        }
+                                    },
+                                    "rear": {
+                                        "name": "Rear",
+                                        "tags": [
+                                            "[EMISSIVE_BRAKE_...]",
+                                            "[EMISSIVE_BRAKE_0]",
+                                            "[EMISSIVE_BRAKE_1]",
+                                            "[EMISSIVE_BRAKE_2]",
+                                            "[EMISSIVE_BRAKE_3]"
+                                        ],
+                                        "entries": {
+                                            "LOCATION": "REAR"
+                                        }
+                                    }
+                                }
+                            },
+                            "turnsignals": {
+                                "name": "Turnsignals",
+                                "childs": {
+                                    "front_left": {
+                                        "name": "Front Left",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_8]"
+                                        ],
+                                        "entries": {
+                                            "LOCATION": "FRONT"
+                                        }
+                                    },
+                                    "front_right": {
+                                        "name": "Front Right",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_8]"
+                                        ],
+                                        "entries": {
+                                            "LOCATION": "FRONT"
+                                        }
+                                    },
+                                    "rear_left": {
+                                        "name": "Rear Left",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_8]"
+                                        ],
+                                        "entries": {
+                                            "LOCATION": "REAR"
+                                        }
+                                    },
+                                    "rear_right": {
+                                        "name": "Rear Right",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_8]"
+                                        ],
+                                        "entries": {
+                                            "LOCATION": "REAR"
+                                        }
+                                    },
+                                    "side_left": {
+                                        "name": "Side Left",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_8]"
+                                        ],
+                                        "entries": {
+                                            "NAME": "BlinkerSideLeft!"
+                                        }
+                                    },
+                                    "side_right": {
+                                        "name": "Side Right",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_8]"
+                                        ],
+                                        "entries": {
+                                            "NAME": "BlinkerSideRight!"
+                                        }
+                                    }
+                                }
+                            },
+                            "informations": {
+                                "name": "Informations",
+                                "childs": {
+                                    "tyre_pressure": {
+                                        "name": "Tyre Pressure",
+                                        "childs": {
+                                            "low": {
+                                                "name": "Low",
+                                                "tag": "[EMISSIVE_...]",
+                                                "entries": {
+                                                    "NAME": "lowtyrepressure!",
+                                                    "INPUT": "TYRE_PRESSURE"
+                                                }
+                                            },
+                                            "high": {
+                                                "name": "High",
+                                                "tag": "[EMISSIVE_...]",
+                                                "entries": {
+                                                    "NAME": "hightyrepressure!",
+                                                    "INPUT": "TYRE_PRESSURE"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "speedlimiter": {
+                                        "name": "Speed Limiter",
+                                        "childs": {
+                                            "enabled": {
+                                                "name": "Enabled",
+                                                "tag": "[EMISSIVE_...]",
+                                                "entries": {
+                                                    "INPUT": "SPEEDLIMITER"
+                                                }
+                                            },
+                                            "engaged": {
+                                                "name": "Engaged",
+                                                "tag": "[EMISSIVE_...]",
+                                                "entries": {
+                                                    "INPUT": "SPEEDLIMITER_INACTION"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "reversing": {
+                                "name": "Reversing",
+                                "tag": "[EMISSIVE_REVERSE_0]"
+                            }
+                        }
+                    },
+                    "interior": {
+                        "name": "Interior",
+                        "childs": {
+                            "hazard": {
+                                "name": "Hazard",
+                                "tags": [
+                                    "[EMISSIVE_HAZARD_...]",
+                                    "[EMISSIVE_HAZARD_0]",
+                                    "[EMISSIVE_HAZARD_1]",
+                                    "[EMISSIVE_HAZARD_2]",
+                                    "[EMISSIVE_HAZARD_3]"
+                                ]
+                            },
+                            "handbrake": {
+                                "name": "Handbrake",
+                                "tags": [
+                                    "[EMISSIVE_HANDBRAKE_0]",
+                                    "[EMISSIVE_HANDBRAKE_1]",
+                                    "[EMISSIVE_HANDBRAKE_2]",
+                                    "[EMISSIVE_HANDBRAKE_3]"
+                                ]
+                            },
+                            "battery": {
+                                "name": "Battery",
+                                "tags": [
+                                    "[EMISSIVE_BATTERY_...]",
+                                    "[EMISSIVE_BATTERY_0]",
+                                    "[EMISSIVE_BATTERY_1]",
+                                    "[EMISSIVE_BATTERY_2]",
+                                    "[EMISSIVE_BATTERY_3]"
+                                ]
+                            },
+                            "tyres": {
+                                "name": "Tyres",
+                                "tags": [
+                                    "[EMISSIVE_TYRES_...]",
+                                    "[EMISSIVE_TYRES_0]",
+                                    "[EMISSIVE_TYRES_1]",
+                                    "[EMISSIVE_TYRES_2]",
+                                    "[EMISSIVE_TYRES_3]"
+                                ]
+                            },
+                            "abs": {
+                                "name": "ABS",
+                                "tags": [
+                                    "[EMISSIVE_ABS_...]",
+                                    "[EMISSIVE_ABS_0]",
+                                    "[EMISSIVE_ABS_1]",
+                                    "[EMISSIVE_ABS_2]",
+                                    "[EMISSIVE_ABS_3]"
+                                ]
+                            },
+                            "abs_inaction": {
+                                "name": "ABS Inaction",
+                                "tags": [
+                                    "[EMISSIVE_ABS_INACTION_...]",
+                                    "[EMISSIVE_ABS_INACTION_0]",
+                                    "[EMISSIVE_ABS_INACTION_1]",
+                                    "[EMISSIVE_ABS_INACTION_2]",
+                                    "[EMISSIVE_ABS_INACTION_3]"
+                                ]
+                            },
+                            "tc": {
+                                "name": "Traction Control",
+                                "tags": [
+                                    "[EMISSIVE_TRACTIONCONTROL_...]",
+                                    "[EMISSIVE_TRACTIONCONTROL_0]",
+                                    "[EMISSIVE_TRACTIONCONTROL_1]",
+                                    "[EMISSIVE_TRACTIONCONTROL_2]",
+                                    "[EMISSIVE_TRACTIONCONTROL_3]"
+                                ]
+                            },
+                            "tc_inaction": {
+                                "name": "Traction Control Inaction",
+                                "tags": [
+                                    "[EMISSIVE_TRACTIONCONTROL_INACTION_...]",
+                                    "[EMISSIVE_TRACTIONCONTROL_INACTION_0]",
+                                    "[EMISSIVE_TRACTIONCONTROL_INACTION_1]",
+                                    "[EMISSIVE_TRACTIONCONTROL_INACTION_2]",
+                                    "[EMISSIVE_TRACTIONCONTROL_INACTION_3]"
+                                ]
+                            },
+                            "turnsignals": {
+                                "name": "Turnsignals",
+                                "childs": {
+                                    "front_left": {
+                                        "name": "Front Left",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_LEFT_8]"
+                                        ]
+                                    },
+                                    "front_right": {
+                                        "name": "Front Right",
+                                        "tags": [
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_...]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_0]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_1]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_2]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_3]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_4]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_5]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_6]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_7]",
+                                            "[EMISSIVE_TURNSIGNAL_RIGHT_8]"
+                                        ]
+                                    }
+                                }
+                            },
+                            "engine_damage": {
+                                "name": "Engine Damage",
+                                "tags": [
+                                    "[EMISSIVE_ENGINE_DAMAGE_...]",
+                                    "[EMISSIVE_ENGINE_DAMAGE_0]",
+                                    "[EMISSIVE_ENGINE_DAMAGE_1]",
+                                    "[EMISSIVE_ENGINE_DAMAGE_2]",
+                                    "[EMISSIVE_ENGINE_DAMAGE_3]"
+                                ]
+                            },
+                            "engine_temp": {
+                                "name": "Engine Temperature",
+                                "tags": [
+                                    "[EMISSIVE_ENGINE_TEMP_...]",
+                                    "[EMISSIVE_ENGINE_TEMP_0]",
+                                    "[EMISSIVE_ENGINE_TEMP_1]",
+                                    "[EMISSIVE_ENGINE_TEMP_2]",
+                                    "[EMISSIVE_ENGINE_TEMP_3]"
+                                ]
+                            },
+                            "gears": {
+                                "name": "Gears",
+                                "childs": {
+                                    "reverse": {
+                                        "name": "Reverse",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_R_...]",
+                                            "[EMISSIVE_GEAR_R_0]",
+                                            "[EMISSIVE_GEAR_R_1]",
+                                            "[EMISSIVE_GEAR_R_2]",
+                                            "[EMISSIVE_GEAR_R_3]"
+                                        ]
+                                    },
+                                    "neutral": {
+                                        "name": "Neutral",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_N_...]",
+                                            "[EMISSIVE_GEAR_N_0]",
+                                            "[EMISSIVE_GEAR_N_1]",
+                                            "[EMISSIVE_GEAR_N_2]",
+                                            "[EMISSIVE_GEAR_N_3]"
+                                        ]
+                                    },
+                                    "drive": {
+                                        "name": "Drive",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_D_...]",
+                                            "[EMISSIVE_GEAR_D_0]",
+                                            "[EMISSIVE_GEAR_D_1]",
+                                            "[EMISSIVE_GEAR_D_2]",
+                                            "[EMISSIVE_GEAR_D_3]"
+                                        ]
+                                    },
+                                    "first_gear": {
+                                        "name": "First Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_1_...]",
+                                            "[EMISSIVE_GEAR_1_0]",
+                                            "[EMISSIVE_GEAR_1_1]",
+                                            "[EMISSIVE_GEAR_1_2]",
+                                            "[EMISSIVE_GEAR_1_3]"
+                                        ]
+                                    },
+                                    "second_gear": {
+                                        "name": "Second Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_2_...]",
+                                            "[EMISSIVE_GEAR_2_0]",
+                                            "[EMISSIVE_GEAR_2_1]",
+                                            "[EMISSIVE_GEAR_2_2]",
+                                            "[EMISSIVE_GEAR_2_3]"
+                                        ]
+                                    },
+                                    "third_gear": {
+                                        "name": "Third Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_3_...]",
+                                            "[EMISSIVE_GEAR_3_0]",
+                                            "[EMISSIVE_GEAR_3_1]",
+                                            "[EMISSIVE_GEAR_3_2]",
+                                            "[EMISSIVE_GEAR_3_3]"
+                                        ]
+                                    },
+                                    "fourth_gear": {
+                                        "name": "Fourth Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_4_...]",
+                                            "[EMISSIVE_GEAR_4_0]",
+                                            "[EMISSIVE_GEAR_4_1]",
+                                            "[EMISSIVE_GEAR_4_2]",
+                                            "[EMISSIVE_GEAR_4_3]"
+                                        ]
+                                    },
+                                    "fifth_gear": {
+                                        "name": "Fifth Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_5_...]",
+                                            "[EMISSIVE_GEAR_5_0]",
+                                            "[EMISSIVE_GEAR_5_1]",
+                                            "[EMISSIVE_GEAR_5_2]",
+                                            "[EMISSIVE_GEAR_5_3]"
+                                        ]
+                                    },
+                                    "sixth_gear": {
+                                        "name": "Sixth Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_6_...]",
+                                            "[EMISSIVE_GEAR_6_0]",
+                                            "[EMISSIVE_GEAR_6_1]",
+                                            "[EMISSIVE_GEAR_6_2]",
+                                            "[EMISSIVE_GEAR_6_3]"
+                                        ]
+                                    },
+                                    "seventh_gear": {
+                                        "name": "Seventh Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_7_...]",
+                                            "[EMISSIVE_GEAR_7_0]",
+                                            "[EMISSIVE_GEAR_7_1]",
+                                            "[EMISSIVE_GEAR_7_2]",
+                                            "[EMISSIVE_GEAR_7_3]"
+                                        ]
+                                    },
+                                    "eighth_gear": {
+                                        "name": "Eighth Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_8_...]",
+                                            "[EMISSIVE_GEAR_8_0]",
+                                            "[EMISSIVE_GEAR_8_1]",
+                                            "[EMISSIVE_GEAR_8_2]",
+                                            "[EMISSIVE_GEAR_8_3]"
+                                        ]
+                                    },
+                                    "ninth_gear": {
+                                        "name": "Ninth Gear",
+                                        "tags": [
+                                            "[EMISSIVE_GEAR_9_...]",
+                                            "[EMISSIVE_GEAR_9_0]",
+                                            "[EMISSIVE_GEAR_9_1]",
+                                            "[EMISSIVE_GEAR_9_2]",
+                                            "[EMISSIVE_GEAR_9_3]"
+                                        ]
+                                    }
+                                }
+                            },
+                            "opendoors": {
+                                "name": "Open Doors",
+                                "tags": [
+                                    "[EMISSIVE_OPENDOORS_...]",
+                                    "[EMISSIVE_OPENDOORS_0]",
+                                    "[EMISSIVE_OPENDOORS_1]",
+                                    "[EMISSIVE_OPENDOORS_2]",
+                                    "[EMISSIVE_OPENDOORS_3]"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "fake_shadows_fx": {
+        "name": "Fake Shadows FX",
+        "tag": "[FAKE_SHADOWS_FX]"
+    },
+    "local_cubemaps": {
+        "name": "Local Cubemaps",
+        "tag": "[LOCAL_CUBEMAP_...]"
+    },
+    "mesh_splitting": {
+        "name": "Mesh Splitting",
+        "tag": "[MESH_SPLIT_...]"
+    },
+    "miscellaneous": {
+        "name": "Miscellaneous",
+        "childs": {
+            "windscreen": {
+                "name": "Windscreen Banner",
+                "tag": "[Material_WindscreenBanner]"
+            },
+            "glass": {
+                "name": "Glass",
+                "tag": "[Material_Glass]"
+            }
+        }
+    },
+    "neck_fx": {
+        "name": "Neck FX",
+        "tag": "[NECK]"
+    },
+    "node_adjustment": {
+        "name": "Node Adjustment",
+        "tag": "[NODE_ADJUSTMENT_...]"
+    },
+    "mirror": {
+        "name": "Mirror",
+        "childs": {
+            "smart_mirror": {
+                "name": "Smart Mirror",
+                "tag": "[SMART_MIRROR]"
+            },
+            "real_mirror": {
+                "name": "Real Mirror",
+                "tags": [
+                    "[REAL_MIRROR_N]",
+                    "[REAL_MIRROR_1]",
+                    "[REAL_MIRROR_2]",
+                    "[REAL_MIRROR_3]",
+                    "[REAL_MIRROR_4]"
+                ]
+            }
+        }
+    },
+    "sparks": {
+        "name": "Sparks",
+        "tag": "[PARTICLES_FX]"
+    },
+    "adjustable_wings": {
+        "name": "Adjustable Wings",
+        "tag": "[ADJUSTABLE_WING_0]"
+    },
+    "wheels": {
+        "name": "Wheels",
+        "childs": {
+            "base_tyre": {
+                "name": "Base Tyre Dimensions",
+                "childs": {
+                    "left_front": {
+                        "name": "Left Front Wheel",
+                        "tag": "[WHEEL_LF]"
+                    },
+                    "right_front": {
+                        "name": "Right Front Wheel",
+                        "tag": "[WHEEL_RF]"
+                    },
+                    "left_rear": {
+                        "name": "Left Rear Wheel",
+                        "tag": "[WHEEL_LR]"
+                    },
+                    "right_rear": {
+                        "name": "Right Rear Wheel",
+                        "tag": "[WHEEL_RR]"
+                    }
+                }
+            },
+            "skidmarks_fx": {
+                "name": "Skidmarks FX",
+                "tag": "[SKIDMARKS_FX]"
+            },
+            "particles_fx": {
+                "name": "Particles FX",
+                "tags": [
+                    "[PARTICLES_FX]",
+                    "[PARTICLES_FX_SMOKE_...]"
+                ]
+            },
+            "tyres_fx": {
+                "name": "Tyres FX",
+                "tag": "[TYRES_FX]",
+                "entries": {
+                    "ENABLED": "1"
+                }
+            }
+        }
+    },
+    "wobbly_bits": {
+        "name": "Wobbly Bits",
+        "tags": [
+            "[WOBBLY_BIT_0]",
+            "[WOBBLY_BIT_1]",
+            "[WOBBLY_BIT_2]",
+            "[WOBBLY_BIT_3]"
+        ]
+    },
+    "wobbly_wipers": {
+        "name": "Wobbly Wipers",
+        "tag": "[WIPERS]"
+    },
+    "wipers_trace": {
+        "name": "Wipers Trace",
+        "childs": {
+            "left": {
+                "name": "Left",
+                "tag": "[WIPERS_TRACE_...]",
+                "entries": {
+                    "WIPERS": "WIPER_LEFT_RUBBER!"
+                }
+            },
+            "right": {
+                "name": "Right",
+                "tag": "[WIPERS_TRACE_...]",
+                "entries": {
+                    "WIPERS": "WIPER_RIGHT_RUBBER!"
+                }
+            }
+        }
+    },
+    "navigation": {
+        "name": "Navigation",
+        "childs": {
+            "android_auto": {
+                "name": "Android Auto",
+                "tag": "[Display_AndroidAuto]"
+            },
+            "gps": {
+                "name": "GPS",
+                "tags": [
+                    "[Display_StyleNavitel]",
+                    "[Navigator_StyleNavitel]"
+                ]
+            }
+        }
+    },
+    "aerodynamics": {
+        "name": "Aerodynamics",
+        "childs": {
+            "headlights": {
+                "name": "Headlights",
+                "tags": [
+                    "[DYNAMIC_CONTROLLER_0]",
+                    "[DYNAMIC_CONTROLLER_1]",
+                    "[DYNAMIC_CONTROLLER_2]",
+                    "[DYNAMIC_CONTROLLER_3]"
+                ],
+                "entries": {
+                    "INPUT": "HEADLIGHTS"
+                }
+            },
+            "aero_map": {
+                "name": "Aero Map",
+                "tags": [
+                    "[MAP_0]",
+                    "[MAP_1]",
+                    "[MAP_2]",
+                    "[MAP_3]"
+                ]
+            },
+            "aero_fan": {
+                "name": "Aero Fan",
+                "tags": [
+                    "[FAN_0]",
+                    "[FAN_1]",
+                    "[FAN_2]",
+                    "[FAN_3]"
+                ]
+            }
+        }
+    },
+    "body_flex": {
+        "name": "Body Flex",
+        "tag": "[_EXTENSION_FLEX]"
+    },
+    "driver_weight": {
+        "name": "Driver Weight",
+        "tag": "[_EXTENSION_DRIVER]",
+        "return_value": true,
+        "entry": "MASS"
+    },
+    "turbo": {
+        "name": "Turbo",
+        "tags": [
+            "[TURBO_0]",
+            "[TURBO_1]",
+            "[TURBO_2]",
+            "[TURBO_3]"
+        ],
+        "return_value": true,
+        "entries_list": [
+            "LAG_DN",
+            "LAG_UP",
+            "MAX_BOOST",
+            "WASTEGATE",
+            "DISPLAY_MAX_BOOST",
+            "REFERENCE_RPM"
+        ]
+    },
+    "clutch_damage": {
+        "name": "Clutch Damage",
+        "tag": "[DAMAGE]"
+    }
+}
