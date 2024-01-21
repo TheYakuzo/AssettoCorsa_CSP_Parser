@@ -1,6 +1,6 @@
 # Custom INI Data Processor
 
-This repository contains a Python script designed to read and process INI configuration files based on a structured JSON template. It's particularly useful for extracting and organizing data from complex configuration files into a more manageable format.
+This repository contains a Python script designed to read and process INI configuration files from CSP ( Custom Shaders Patch ) based on a structured JSON template. It's particularly useful for extracting and organizing data from complex configuration files into a more manageable format.
 
 ## Overview
 
