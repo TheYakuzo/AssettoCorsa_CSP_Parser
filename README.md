@@ -2,6 +2,9 @@
 
 This repository contains a Python script designed to read and process INI configuration files from CSP ( Custom Shaders Patch ) based on a structured JSON template. It's particularly useful for extracting and organizing data from complex configuration files into a more manageable format.
 
+Realised thanks to the repository Wiki :
+https://github.com/ac-custom-shaders-patch/acc-extension-config/wiki
+
 ## Overview
 
 The script `process_ini.py` reads data from INI files, compares it against a predefined JSON template, and extracts specific information. This is particularly useful in scenarios where configuration files are dense and need to be decoded into a more readable and usable format.
