@@ -160,9 +160,12 @@ def check_entries(ini_data, tags, entries=None):
 
 
 
-
-ini_file_path = './ext_config.ini'
-json_file_path = './car_csp.json'
+# For Cars
+ini_file_path = './cars/ext_config.ini'
+json_file_path = './cars/car_csp.json'
+# For Tracks
+# ini_file_path = './tracks/ext_config.ini'
+# json_file_path = './tracks/track_csp.json'
 
 ini_data = read_ini_file(ini_file_path)
 json_template = read_json_file(json_file_path)
