@@ -1,0 +1,272 @@
+{
+    "basic": {
+        "name": "Basic",
+        "childs": {
+            "support_wind": {
+                "name": "Support Wind-Based Effects",
+                "tag": "[BASIC]",
+                "entries": {
+                    "SUPPORTS_WIND": "1"
+                }
+            },
+            "rally_track": {
+                "name": "Rally Track",
+                "tag": "[BASIC]",
+                "entries": {
+                    "RALLY_TRACK": "1"
+                }
+            },
+            "pitboxes": {
+                "name": "Pitboxes",
+                "tag": "[BASIC]",
+                "return_value": true,
+                "entry": "PITBOXES"
+            }
+        }
+    },
+    "vao": {
+        "name": "VAO",
+        "tag": "[VAO]"
+    },
+    "audio_fx": {
+        "name": "Audio FX",
+        "tags": [
+            "[SOUNDBANK_...]",
+            "[SOUNDBANK_0]",
+            "[SOUNDBANK_1]",
+            "[SOUNDBANK_2]",
+            "[SOUNDBANK_3]"
+        ]
+    },
+    "bounced_light": {
+        "name": "Bounced Light",
+        "tag": "[BOUNCED_LIGHT]",
+        "entries": {
+            "SUPPORTED": "1"
+        }
+    },
+    "track_conditions": {
+        "name": "Track Conditions",
+        "childs": {
+            "time": {
+                "name": "Time",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "INPUT": "TIME"
+                }
+            },
+            "time_smooth": {
+                "name": "Time Smooth",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "INPUT": "TIME_SMOOTH"
+                }
+            },
+            "sun": {
+                "name": "Sun",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "INPUT": "SUN"
+                }
+            },
+            "year_progress": {
+                "name": "Year Progress",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "INPUT": "YEAR_PROGRESS"
+                }
+            },
+            "year_day": {
+                "name": "Year Day",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "INPUT": "YEAR_DAY"
+                }
+            }
+        }
+    },
+    "track_season": {
+        "name": "Track Season",
+        "childs": {
+            "summer": {
+                "name": "Summer",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "NAME": "SEASON_SUMMER | SUMMER",
+                    "INPUT": "YEAR_PROGRESS"
+                }
+            },
+            "autumn": {
+                "name": "Autumn",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "NAME": "SEASON_AUTUMN | AUTUMN",
+                    "INPUT": "YEAR_PROGRESS"
+                }
+            },
+            "winter": {
+                "name": "Winter",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "NAME": "SEASON_WINTER | WINTER",
+                    "INPUT": "YEAR_PROGRESS"
+                }
+            },
+            "spring": {
+                "name": "Spring",
+                "foreach": true,
+                "only_one": true,
+                "tag": "[CONDITION_N]",
+                "entries": {
+                    "NAME": "SEASON_SPRING | SPRING",
+                    "INPUT": "YEAR_PROGRESS"
+                }
+            }
+        }
+    },
+    "deforming_walls": {
+        "name": "Deforming Walls",
+        "tags": [
+            "[DEFORMING_WALLS_...]",
+            "[DEFORMING_WALLS_0]",
+            "[DEFORMING_WALLS_1]",
+            "[DEFORMING_WALLS_2]",
+            "[DEFORMING_WALLS_3]"
+        ]
+    },
+    "dirt": {
+        "name": "Dirt on Tyres",
+        "tag": "[DIRT]"
+    },
+    "display": {
+        "name": "Display",
+        "tags": [
+            "[DISPLAY_...]",
+            "[DISPLAY_0]",
+            "[DISPLAY_1]",
+            "[DISPLAY_2]",
+            "[DISPLAY_3]"
+        ]
+    },
+    "digital_screen": {
+        "name": "Digital Screen",
+        "tag": "[Material_DigitalScreen]"
+    },
+    "light": {
+        "name": "Light",
+        "childs": {
+            "lights": {
+                "name": "Lights",
+                "foreach": true,
+                "tag": "[LIGHT_N]",
+                "return_value": true,
+                "entry": ["DESCRIPTION", "COLOR"]
+            },
+            "light_series": {
+                "name": "Light Series",
+                "foreach": true,
+                "tag": "[LIGHT_SERIES_N]",
+                "return_value": true,
+                "entry": ["DESCRIPTION", "COLOR"]
+            },
+            "custom_emissive": {
+                "name": "Custom Emissive",
+                "tag": "[CustomEmissive]"
+            }
+        }
+    },
+    "miscellaneous": {
+        "name": "Miscellaneous",
+        "childs": {
+            "spectators": {
+                "name": "Spectators",
+                "tag": "[SPECTATORS]"
+            },
+            "light_pollution": {
+                "name": "Light Pollution",
+                "tag": "[LIGHT_POLLUTION]",
+                "return_value": true,
+                "entry": ["DENSITY", "RADIUS_KM"]
+            },
+            "fireworks": {
+                "name": "Fireworks",
+                "tag": "[PARTICLES_FX]",
+                "entry": "FIREWORKS_POS_..."
+            },
+            "custom": {
+                "name": "Emmissive Custom",
+                "tag": "[CustomEmissive]",
+                "return_value": true,
+                "entry": "DESCRIPTION"
+            },
+            "others": {
+                "name": "Others Lights",
+                "tag": "[LIGHT_...]",
+                "foreach": true,
+                "return_value": true,
+                "entry": ["DESCRIPTION", "COLOR"]
+            }
+        }
+    },
+    "kn5_patch": {
+        "name": "KN5 Patch",
+        "tag": "[KN5]"
+    },
+    "animation": {
+        "name": "Animations",
+        "tag": "[ANIMATED_...]"
+    },
+    "smoke": {
+        "name": "Smoke",
+        "tag": "[SMOKE_...]"
+    },
+    "landscape_fx": {
+        "name": "Landscape FX",
+        "childs": {
+            "trees": {
+                "name": "Trees",
+                "tag": "[TREES]"
+            },
+            "weather_fx": {
+                "name": "Weather FX",
+                "tag": "[WEATHER_FX]",
+                "return_value": true,
+                "entry": "SKY_BELOW_HORIZON"
+            },
+            "grass_fx": {
+                "name": "Grass FX",
+                "tag": "[GRASS_FX]"
+            },
+            "rain_fx": {
+                "name": "Rain FX",
+                "tag": "[RAIN_FX]"
+            },
+            "water_shader": {
+                "name": "Water Shader",
+                "tag": "[Material_Water]",
+                "return_value": true,
+                "entry": "Type"
+            },
+            "wind_fx": {
+                "name": "Wind FX",
+                "tag": "[WIND]"
+            }
+        }
+    }
+}
