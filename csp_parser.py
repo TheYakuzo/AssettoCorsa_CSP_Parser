@@ -51,6 +51,7 @@ def read_json_file(file_path):
     Returns:
     dict: A dictionary representation of the JSON file.
     """
+    print(f"Lecture du fichier JSON : {file_path}")
     with open(file_path, 'r') as file:
         return json.load(file)
     
@@ -67,14 +68,17 @@ def process_data(ini_data, json_template):
     Returns:
     dict: Extracted data based on the JSON template.
     """
-    print("Starting data processing")
+    print("----------------------------------")
+    print("----------------------------------")
+    print(f"{ini_data}")
+    print("----------------------------------")
+    print("----------------------------------")
     result = {}
     for category, category_details in json_template.items():
-        print(f"Processing category: {category}")
         cat_result = process_category(ini_data, category_details)
         if cat_result:
             result[category] = cat_result
-    print("Processing completed")
+            
     return result
 
 
@@ -95,7 +99,6 @@ def process_category(ini_data, category_details):
     # Handle sub-categories
     if 'childs' in category_details:
         for sub_category, sub_details in category_details["childs"].items():
-            print(f"  Processing sub-category: {sub_category}")
             if 'childs' in sub_details:
                 sub_result = process_category(ini_data, sub_details)
                 if sub_result:
@@ -128,7 +131,7 @@ def process_sub_category(ini_data, sub_details, sub_category, category_result):
 
     foreach = sub_details.get("foreach", False)
     only_one = sub_details.get("only_one", False)
-
+    
     if foreach:
         process_foreach_sub_category(ini_data, sub_details, sub_category, category_result, tags, only_one)
     else:
@@ -212,8 +215,6 @@ def process_single_sub_category(ini_data, sub_details, sub_category, category_re
                 return  # Sort de la boucle dès qu'une condition est remplie
 
 
-
-
 def process_conditions(ini_data, sub_details, tag, sub_category_result, index, only_one):
     """
     Processes conditions for a sub-category and updates the result.
@@ -254,22 +255,18 @@ def check_entries(ini_data, tags, entries=None):
     Returns:
     bool: True if all specified entries match, False otherwise.
     """
-    print(f"Checking entries for tags: {tags}, with specific entries: {entries}")
     if not entries:
         # If no entries are specified, just check for the presence of tags
         for tag in tags:
             tag = tag.strip("[]")
             if tag in ini_data:
-                print(f"Tag '{tag}' found without specific entries.")
                 return True
-        print("No matching tag found without specific entries.")
         return False
 
     # If entries are specified, check for the presence of the tag and matching of entries
     for tag in tags:
         tag = tag.strip("[]")
         if tag not in ini_data:
-            print(f"Tag '{tag}' not found.")
             continue
 
         data = ini_data[tag]
@@ -279,38 +276,33 @@ def check_entries(ini_data, tags, entries=None):
                 # For values ending with "!", check for inclusion
                 search_value = value[:-1] # Remove "!" from the value
                 if key not in data or search_value not in data[key]:
-                    print(f"Entry '{key}' does not contain '{search_value}' for tag '{tag}'.")
                     all_entries_match = False
                     break
             elif '|' in value:
                 # Split the value by '|' and check if any of the values is present
                 possible_values = value.split('|')
                 if key not in data or not any(val.strip() in data[key] for val in possible_values):
-                    print(f"None of the possible values for '{key}' match for tag '{tag}'.")
                     all_entries_match = False
                     break
             else:
                 # Exact match for other values
                 if key not in data or data[key] != value:
-                    print(f"Entry '{key}' does not match or is absent for tag '{tag}'.")
                     all_entries_match = False
                     break
 
         if all_entries_match:
-            print(f"All specified entries match for tag '{tag}'.")
             return True
 
-    print("No match for the specified tags and entries.")
     return False
 
 
 
 # Paths for Cars and Tracks
-# ini_file_path = './cars/ext_config.ini'
-# json_file_path = './cars/car_csp.json'
+ini_file_path = './cars/ext_config.ini'
+json_file_path = './cars/car_csp.json'
 # For Tracks
-ini_file_path = './tracks/ext_config.ini'
-json_file_path = './tracks/track_csp.json'
+# ini_file_path = './tracks/ext_config.ini'
+# json_file_path = './tracks/track_csp.json'
 
 # Read and process the data
 ini_data = read_ini_file(ini_file_path)
